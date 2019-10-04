@@ -1,0 +1,17 @@
+{
+  "name": "adapt-img-text-reveal",
+  "version": "0.0.1",
+  "framework": ">=3.3",
+  "authors": [
+    "Saral Sharma <saral.sharma@gmail.com>"
+  ],
+  "displayName" : "Image text reveal",
+  "component" : "imageTextReveal",
+  "description": "A component which reveals/drops down text if clicked on image.",
+  "main": "/js/adapt-img-text-reveal.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}
