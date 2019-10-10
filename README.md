@@ -1,2 +1,2 @@
 # adapt-img-text-reveal
-This is ADAPT component which displays image and when user click on the image then related text slides down from bottom of the image.
+<p>This component reveals the text information when user clicks on the graphic. The text information slides down under the graphic.</p><p>Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.</p>
