@@ -6,7 +6,7 @@
     },
     "framework": ">=3.3",
     "homepage": "https://github.com/saralsharma/adapt-img-text-reveal",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "authors": [
         "Saral Sharma <saral.sharma@gmail.com>"
     ],
