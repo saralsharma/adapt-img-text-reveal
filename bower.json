@@ -4,15 +4,15 @@
         "type": "git",
         "url": "git://github.com/saralsharma/adapt-img-text-reveal.git"
     },
-    "framework": ">=3.3",
+    "framework": ">=2.1.0",
     "homepage": "https://github.com/saralsharma/adapt-img-text-reveal",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "authors": [
         "Saral Sharma <saral.sharma@gmail.com>"
     ],
     "displayName": "Image text reveal",
     "component": "imageTextReveal",
-    "description": "A component which reveals/drops down text if clicked on image.",
+    "description": "This component reveals the text information when user clicks on the graphic. The text information slides down under the graphic. Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.",
     "main": "/js/adapt-img-text-reveal.js",
     "keywords": [
         "adapt-plugin",

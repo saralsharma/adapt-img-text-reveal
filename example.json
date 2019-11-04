@@ -13,8 +13,8 @@
     "alt": "alt text",
     "large": "https://github.com/adaptlearning/documentation/raw/master/04_wiki_assets/adapt_framework/adapt-logo_208x200.gif",
     "small": "https://github.com/adaptlearning/documentation/raw/master/04_wiki_assets/adapt_framework/adapt-logo_208x200.gif",
-    "attribution":"Copyright © 2015"
+    "attribution":""
   },
-  "textToReveal":"This component reveals the text information when user clicks on the graphic. The text information slides down under the graphic. Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.",
-  "duration":"fast"
+  "textToReveal":"<p>This component reveals the text information when user clicks on the graphic. The text information slides down under the graphic.</p><p>Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.</p>",
+  "duration":"slow"
 }
