@@ -4,9 +4,9 @@
         "type": "git",
         "url": "git://github.com/saralsharma/adapt-img-text-reveal.git"
     },
-    "framework": ">=2.1.9",
+    "framework": ">=2.1.0",
     "homepage": "https://github.com/saralsharma/adapt-img-text-reveal",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "authors": [
         "Saral Sharma <saral.sharma@gmail.com>"
     ],
