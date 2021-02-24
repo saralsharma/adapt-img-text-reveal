@@ -1,98 +1,105 @@
 {
-  "type":"object",
+  "type": "object",
   "$schema": "http://json-schema.org/draft-04/schema",
   "id": "http://jsonschema.net",
   "$ref": "http://localhost/plugins/content/component/model.schema",
   "globals": {
-      "ariaRegion": {
-        "type": "string",
-        "required": true,
-        "default": "",
-        "inputType": "Text",
-        "validators": [],
-        "translatable": true
-      }
-    },
-  "properties":{
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
     "_supportedLayout": {
       "type": "string",
       "required": true,
-      "enum": ["full-width", "half-width", "both"],
+      "enum": [
+        "full-width",
+        "half-width",
+        "both"
+      ],
       "default": "both",
       "editorOnly": true
     },
     "instruction": {
-           "type": "string",
-           "required": false,
-           "default": "",
-           "inputType": "Text",
-           "validators": [],
-           "help": "Enter the instruction text for this component.",
-           "translatable": true
-         },
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Enter the instruction text for this component.",
+      "translatable": true
+    },
     "_graphic": {
-              "type": "object",
-              "title": "Image",
-              "properties":{
-                "large": {
-                  "type": "string",
-                  "required": true,
-                  "default": "",
-                  "title": "Select large image",
-                  "inputType": "Asset:image",
-                  "validators": ["required"],
-                  "help": "Learner will click this image to reveal the text."
-                },
-                "small": {
-                  "type": "string",
-                  "required": false,
-                   "default": "",
-                   "title": "Select small image",
-                   "inputType": "Asset:image",
-                   "validators": ["required"],
-                   "help": "This image will be shown on mobile devices if supplied. Learner will click this image to reveal the text."
-                   },
-                "alt": {
-                  "type": "string",
-                  "required": false,
-                  "default": "",
-                  "title": "Alternative Text",
-                  "inputType": "Text",
-                  "validators": [],
-                  "help": "Alternative text for this items image",
-                  "translatable": true
-                },
-                "attribution": {
-                  "type": "string",
-                  "required": false,
-                  "default": "",
-                  "inputType": "Text",
-                  "validators": [],
-                  "help": "Text to be displayed as an attribution",
-                  "translatable": true
-                }
-              }
-            },
-            "textToReveal": {
-              "type": "string",
-              "required": true,
-              "default": "Enter your text here.",
-              "title": "Text to reveal",
-              "inputType": "TextArea",
-              "validators": [],
-              "help": "Enter text here which will slide down under the image, once the image is clicked.",
-              "translatable": true
-            },
-            "duration": {
-                          "type": "string",
-                          "required": false,
-                          "default": "",
-                          "title": "Duration of slide down animation.",
-                          "inputType": "Text",
-                          "validators": [],
-                          "help": "Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.",
-                          "translatable": true
-            }
-
-          }
+      "type": "object",
+      "title": "Image",
+      "properties": {
+        "large": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "title": "Select large image",
+          "inputType": "Asset:image",
+          "validators": [
+            "required"
+          ],
+          "help": "Learner will click this image to reveal the text."
+        },
+        "small": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Select small image",
+          "inputType": "Asset:image",
+          "validators": [
+            "required"
+          ],
+          "help": "This image will be shown on mobile devices if supplied. Learner will click this image to reveal the text."
+        },
+        "alt": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Alternative Text",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Alternative text for this items image",
+          "translatable": true
+        },
+        "attribution": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text to be displayed as an attribution",
+          "translatable": true
+        }
+      }
+    },
+    "textToReveal": {
+      "type": "string",
+      "required": true,
+      "default": "Enter your text here.",
+      "title": "Text to reveal",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "Enter text here which will slide down under the image, once the image is clicked.",
+      "translatable": true
+    },
+    "duration": {
+      "type": "string",
+      "required": false,
+      "default": "400",
+      "title": "Duration of slide down animation.",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.",
+      "translatable": true
+    }
+  }
 }

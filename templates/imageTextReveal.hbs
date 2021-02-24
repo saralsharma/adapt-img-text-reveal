@@ -1,12 +1,15 @@
-<div class="imageTextReveal-inner component-inner">
+<div class="imageTextReveal-inner component-inner" id="{{_id}}-imageTextRevealContainer">
     {{> component this}}
 
     <div class="graphic-widget component-widget{{#if _graphic.attribution}} graphic-widget-attribution{{/if}}">
-        <img src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}} />
+        <img src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}" {{#if
+            _graphic.alt}}aria-label="{{_graphic.alt}}" {{else}}aria-hidden="true" {{/if}} />
     </div>
     {{#if _graphic.attribution}}
-        <div class="graphic-attribution">{{{_graphic.attribution}}}</div>
+    <div class="graphic-attribution">{{{_graphic.attribution}}}</div>
     {{/if}}
-    <div class="imageTextReveal-item-revealText" id="{{_id}}-revealTxt">{{{textToReveal}}}</div>
+    <div id="{{_id}}-revealTxtContainer">
+        <div class="imageTextReveal-item-revealText" id="{{_id}}-revealTxt">{{{textToReveal}}}</div>
+    </div>
 
 </div>
